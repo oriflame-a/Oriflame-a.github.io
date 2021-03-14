@@ -1,0 +1,287 @@
+/************************************
+************index
+**********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+span {
+    color: #000000;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#logo {
+    width: 20%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_element a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu_element a:hover {
+    color: #00897b;
+    border-bottom: solid 1px #00897b;
+}
+
+@media (max-width: 1480px) {
+    .menu {
+        width: 40%;
+    }
+}
+
+@media (max-width: 920px) {
+    #logo {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .img_logo_maxHei {
+        height: 100%;
+        max-height: 215px;
+        width: 70%;
+    }
+    span {
+        font-size: 60px;
+        font-weight: 700;
+        width: 10%;
+        text-align: center;
+        display: block;
+    }
+    #close_menu {
+        display: none;
+        z-index: 51;
+    }
+    .menu {
+        padding-top: 10%;
+        text-align: center;
+        background-color: #e4fdf9;
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: 50;
+        line-height: 1.7;
+    }
+    .menu_element a {
+        font-size: 60px;
+    }
+}
+
+
+/*****************************
+Header225
+*****************************/
+
+header {
+    background-image: url(./img/img_index/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* margin-top: 132px; */
+    min-height: 720px;
+}
+
+.box_info {
+    max-height: 100%;
+    width: 67%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 10%;
+}
+
+.box_button {
+    display: flex;
+    width: 50%;
+    margin: 25px auto auto auto;
+    justify-content: space-around;
+}
+
+.button {
+    display: block;
+    width: 30%;
+    padding: 15px;
+    border-radius: 7em;
+    color: #fff;
+}
+
+.button a {
+    color: #fff;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.vk {
+    background-color: #00897b;
+}
+
+.telegram {
+    background-color: #006e63;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width:1480px) {
+    .box_button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 920px) {
+    .box_info {
+        width: 80%;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .info_header_p {
+        text-align: justify;
+        font-size: 16px;
+    }
+    .box_button {
+        display: block;
+        margin-top: 25px;
+        width: 100%;
+    }
+    .button {
+        padding: 10px;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .telegram {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/**************************************
+***box_info_duties
+**************************************/
+
+.box_info_duties {
+    background-color: #e4fdf9;
+}
+
+.your {
+    text-align: center;
+    padding: 23px;
+}
+
+.box_stock {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+}
+
+.box_img_info {
+    padding: 17px;
+    margin: 13px;
+    font-size: 1.3em;
+    width: 100%;
+    height: 400px;
+}
+
+.box_img_info img {
+    border-radius: 1.5em;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.twu {
+    order: 2;
+}
+
+@media (max-width: 920px) {
+    .box_stock {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .box_img_info {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    .box_stock {
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+    }
+    .box_img_info {
+        height: 100%;
+        margin: auto;
+    }
+    .box_img_info img {
+        height: 400px;
+    }
+    .marg {
+        margin-bottom: 0px;
+    }
+}
+
+
+/********************************
+************footer
+********************************/
+
+footer {
+    height: 25vh;
+    background-color: #212121;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+footer a {
+    font-size: 1.2em;
+    color: #fff;
+}
